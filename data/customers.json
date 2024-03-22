@@ -1,0 +1,56 @@
+[
+    {
+      "_id": "65fda571fe48ba55e96e1ef1",
+      "name": "Monroe Raymond",
+      "email": "monroeraymond@mantrix.com",
+      "role": "admin",
+      "active": true,
+      "photo": "user-4.jpg",
+      "password": ""
+    },
+    {
+      "_id": "65fda5716a8ec64bfd9b2bc2",
+      "name": "May Deleon",
+      "email": "maydeleon@mantrix.com",
+      "role": "user",
+      "active": true,
+      "photo": "user-5.jpg",
+      "password": ""
+    },
+    {
+      "_id": "65fda5712d547482efae18eb",
+      "name": "Talley Moon",
+      "email": "talleymoon@mantrix.com",
+      "role": "user",
+      "active": false,
+      "photo": "user-3.jpg",
+      "password": ""
+    },
+    {
+      "_id": "65fda571477fc22a7e9643a1",
+      "name": "Edwina Lang",
+      "email": "edwinalang@mantrix.com",
+      "role": "user",
+      "active": false,
+      "photo": "user-1.jpg",
+      "password": ""
+    },
+    {
+      "_id": "65fda5716dac14caea492949",
+      "name": "Sweeney Rowe",
+      "email": "sweeneyrowe@mantrix.com",
+      "role": "user",
+      "active": true,
+      "photo": "user-3.jpg",
+      "password": ""
+    },
+    {
+      "_id": "65fda5712ae71d4b8f39fd45",
+      "name": "Aida Guerra",
+      "email": "aidaguerra@mantrix.com",
+      "role": "admin",
+      "active": false,
+      "photo": "user-3.jpg",
+      "password": ""
+    }
+  ]

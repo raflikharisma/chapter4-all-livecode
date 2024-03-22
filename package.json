@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "import-data": "nodemon ./data/seeder.js --import",
+    "delete": "nodemon ./data/seeder.js --delete"
   },
   "author": "",
   "license": "ISC",
