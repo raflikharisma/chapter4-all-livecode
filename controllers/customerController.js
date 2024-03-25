@@ -3,7 +3,13 @@ const Customer = require("./../models/customerModel");
 
 const getAllData = async (req, res, next) => {
   try {
-    const customerData = await Customer.find();
+    const queryObject = {...req.query};
+    const excludedColumn = [`page`, `sort`, `limit`, `fields`];
+    excludedColumn.forEach((el) => delete queryObject[el])
+
+    console.log(req.query), queryObject;
+
+    const customerData = await Customer.find(queryObject);
     res.status(200).json({
       status: "Success",
       totalData: customerData.length,
@@ -61,11 +67,11 @@ const updateDataById = async (req, res) => {
     const customer = await Customer.findByIdAndUpdate(id, req.body, {
       new: true,
       runValidators: true,
-    })
+    });
     res.status(200).json({
       status: "success",
       message: "Successfully Updating data",
-      customer: customer
+      customer: customer,
     });
   } catch (err) {
     res.status(400).json({
@@ -76,25 +82,20 @@ const updateDataById = async (req, res) => {
 };
 
 const deleteDataById = async (req, res) => {
-
-
   try {
     const { id } = req.params;
     const customer = await Customer.findByIdAndDelete(id);
     res.status(200).json({
       status: "success",
       message: "Successfully Deleting data",
-      deletedData: customer
+      deletedData: customer,
     });
   } catch (error) {
     res.status(400).json({}).json({
       status: "fail",
-      message: error.message
+      message: error.message,
     });
   }
-
- 
-   
 };
 
 module.exports = {
