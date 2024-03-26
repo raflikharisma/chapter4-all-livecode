@@ -24,6 +24,13 @@ const customerSchema = new mongoose.Schema({
   },
   password: {
     type: String,
+  },
+  age: {
+    type: Number,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now()
   }
 });
 
