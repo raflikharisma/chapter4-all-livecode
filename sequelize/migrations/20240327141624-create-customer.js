@@ -26,7 +26,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       photo: {
-        type: Sequelize.TEXT({ length: 'long' }),
+        type: Sequelize.TEXT
       },
       createdAt: {
         allowNull: false,

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit data Customer</h1>
+    <form action="/customers/admin/edit/<%= customer.id %>" method="POST">
+        <label for="">Name</label>
+        <input type="text" name="name" id="" placeholder="imput your name" value="<%= customer.name %>"/>
+        <label for="">Email</label>
+        <input type="email" name="email" id="" placeholder="input your email" value="<%= customer.email %>"/>
+        <input type="submit" name="" id="" >
+      </form>
+</body>
+</html>
